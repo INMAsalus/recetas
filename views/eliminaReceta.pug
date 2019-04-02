@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title Eliminar libro
+	body
+		form(id="eliminarForm" action="/eliminarReceta/eliminar" method="post")
+			p #{ḿensaje}
+			p
+				label(for="libroEliminar") Eliminar recetas que incluyan el siguietne texto:
+				input(type="text" id="libroEliminar" name="id_libro")
+			p
+				input(type="hidden" name="metodo" value="delete")
+				input(type="submit" value="Eliminar")
